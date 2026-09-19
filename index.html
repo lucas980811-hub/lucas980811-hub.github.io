@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人聯絡資訊</title>
+  
+  <!-- 引入 Font Awesome 免費圖示庫 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* 基本整體樣式 */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(135deg, #1e1e24 0%, #2b2d42 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* 個人名片卡片 */
+    .card {
+      background: #ffffff;
+      padding: 45px 30px;
+      border-radius: 24px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    /* 名字與簡介 */
+    .name {
+      font-size: 1.8rem;
+      color: #2b2d42;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .bio {
+      font-size: 0.95rem;
+      color: #6c757d;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    /* 社群按鈕容器 */
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    /* 單個連結按鈕 */
+    .social-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px 20px;
+      background: #f8f9fa;
+      color: #2b2d42;
+      text-decoration: none;
+      border-radius: 14px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.25s ease;
+      border: 1px solid #e9ecef;
+    }
+
+    /* 滑鼠懸停與點擊效果 */
+    .social-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      background: #ffffff;
+    }
+
+    /* 個別品牌圖示顏色設定 */
+    .instagram i { color: #E1306C; font-size: 1.3rem; }
+    .line i      { color: #00B900; font-size: 1.3rem; }
+    .phone i     { color: #4A90E2; font-size: 1.3rem; }
+
+    /* 照片 */
+    .photo {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      margin-top: 28px;
+      border-radius: 12px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    
+    <!-- 名字與簡介 -->
+    <h1 class="name">Liszt</h1>
+    <p class="bio">黃大帥哥</p>
+
+    <!-- 連結按鈕列表 -->
+    <div class="social-links">
+      
+      <!-- Instagram 連結 -->
+      <a href="https://www.instagram.com/17.__liszt" target="_blank" class="social-btn instagram">
+        <i class="fa-brands fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+
+      <!-- LINE 連結 -->
+      <a href="https://line.me/ti/p/EcpIfFxYbk" target="_blank" class="social-btn line">
+        <i class="fa-brands fa-line"></i>
+        <span>LINE 帳號</span>
+      </a>
+
+      <!-- 電話號碼連結 -->
+      <a href="tel:0966652811" class="social-btn phone">
+        <i class="fa-solid fa-phone"></i>
+        <span>電話聯絡</span>
+      </a>
+
+    </div>
+
+    <!-- 照片 -->
+    <img src="https://i.postimg.cc/QtkYWdqZ/IMG-9126.jpg" alt="Liszt" class="photo">
+
+  </div>
+
+</body>
+</html>
