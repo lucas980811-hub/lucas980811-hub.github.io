@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>個人聯絡資訊</title>
-  
+  <title>Liszt｜個人聯絡資訊</title>
+  <meta name="description" content="Liszt 的個人聯絡資訊，可透過 Instagram、LINE 或電話聯繫。">
+
+  <!-- Open Graph 標籤，讓分享到社群時顯示預覽卡片 -->
+  <meta property="og:title" content="Liszt">
+  <meta property="og:description" content="本世紀最偉大鋼琴家堪稱21世紀李斯特">
+  <meta property="og:image" content="https://i.postimg.cc/QtkYWdqZ/IMG-9126.jpg">
+  <meta property="og:type" content="profile">
+
   <!-- 引入 Font Awesome 免費圖示庫 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -72,15 +79,21 @@
       border-radius: 14px;
       font-weight: 600;
       font-size: 1rem;
-      transition: all 0.25s ease;
+      transition: all 0.2s ease;
       border: 1px solid #e9ecef;
     }
 
-    /* 滑鼠懸停與點擊效果 */
+    /* 滑鼠懸停效果（桌面） */
     .social-btn:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
       background: #ffffff;
+    }
+
+    /* 觸控點擊回饋（手機） */
+    .social-btn:active {
+      transform: scale(0.97);
+      background: #eef0f2;
     }
 
     /* 個別品牌圖示顏色設定 */
@@ -96,6 +109,7 @@
       object-fit: cover;
       margin-top: 28px;
       border-radius: 12px;
+      background: #f1f1f1; /* 圖片載入前的佔位色 */
     }
 
   </style>
@@ -112,27 +126,27 @@
     <div class="social-links">
       
       <!-- Instagram 連結 -->
-      <a href="https://www.instagram.com/17.__liszt" target="_blank" class="social-btn instagram">
-        <i class="fa-brands fa-instagram"></i>
+      <a href="https://www.instagram.com/17.__liszt" target="_blank" rel="noopener" class="social-btn instagram">
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
         <span>Instagram</span>
       </a>
 
       <!-- LINE 連結 -->
-      <a href="https://line.me/ti/p/EcpIfFxYbk" target="_blank" class="social-btn line">
-        <i class="fa-brands fa-line"></i>
+      <a href="https://line.me/ti/p/EcpIfFxYbk" target="_blank" rel="noopener" class="social-btn line">
+        <i class="fa-brands fa-line" aria-hidden="true"></i>
         <span>LINE 帳號</span>
       </a>
 
       <!-- 電話號碼連結 -->
       <a href="tel:0966652811" class="social-btn phone">
-        <i class="fa-solid fa-phone"></i>
+        <i class="fa-solid fa-phone" aria-hidden="true"></i>
         <span>電話聯絡</span>
       </a>
 
     </div>
 
     <!-- 照片 -->
-    <img src="https://i.postimg.cc/QtkYWdqZ/IMG-9126.jpg" alt="Liszt" class="photo">
+    <img src="https://i.postimg.cc/QtkYWdqZ/IMG-9126.jpg" alt="Liszt 的個人照片" class="photo" loading="lazy">
 
   </div>
 
