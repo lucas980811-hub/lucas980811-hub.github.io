@@ -125,17 +125,21 @@
     <!-- 連結按鈕列表 -->
     <div class="social-links">
       
-      <!-- Instagram 連結 -->
-      <a href="https://www.instagram.com/17.__liszt" target="_blank" rel="noopener" class="social-btn instagram">
-        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-        <span>Instagram</span>
-      </a>
+    <!-- Instagram 連結：優先開啟 App -->
+<a href="instagram://user?username=17.__liszt" 
+   onclick="setTimeout(function(){window.location='https://www.instagram.com/17.__liszt'}, 500)"
+   class="social-btn instagram">
+  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+  <span>Instagram</span>
+</a>
 
-      <!-- LINE 連結 -->
-      <a href="https://line.me/ti/p/EcpIfFxYbk" target="_blank" rel="noopener" class="social-btn line">
-        <i class="fa-brands fa-line" aria-hidden="true"></i>
-        <span>LINE 帳號</span>
-      </a>
+<!-- LINE 連結：直接開啟 App -->
+<a href="line://ti/p/EcpIfFxYbk" 
+   onclick="setTimeout(function(){window.location='https://line.me/ti/p/EcpIfFxYbk'}, 500)"
+   class="social-btn line">
+  <i class="fa-brands fa-line" aria-hidden="true"></i>
+  <span>LINE 帳號</span>
+</a>
 
       <!-- 電話號碼連結 -->
       <a href="tel:0966652811" class="social-btn phone">
